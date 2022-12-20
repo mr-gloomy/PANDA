@@ -285,7 +285,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .header-v2 .wrap-menu-desktop {
-  background-color: blue;
+  background-color: white;
   top: 0;
 }
 
@@ -295,7 +295,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .header-v4 .wrap-menu-desktop {
-  background-color: #fff;
+  background-color: blue;
 }
 
 
@@ -309,7 +309,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   display: flex;
   align-items: center;
   background-color: transparent;
-  border-bottom: 1.5px solid #fff;
+  border-bottom: 1.5px solid rgba(190, 190, 190,0.3);
 }
 
 
@@ -614,14 +614,17 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*==================================================================
 [ Fixed menu desktop ]*/
 
+
+
 .fix-menu-desktop .wrap-menu-desktop {
   height: 70px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(190, 190, 190,0.5);
   box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
   -o-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
   -ms-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
+  
 }
 
 .header-v2 .fix-menu-desktop.container-menu-desktop {
