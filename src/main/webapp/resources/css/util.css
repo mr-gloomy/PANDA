@@ -3712,3 +3712,11 @@ iframe {border: none;}
 .pointer-none {
 	pointer-events: none;
 }
+
+
+/* 폰트 수정 - 김태홍 */
+.logo .maintext{
+	color: #505050;
+    font-size: 40px;
+    opacity: 0.7;
+}
