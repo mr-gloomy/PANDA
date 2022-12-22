@@ -24,6 +24,8 @@
         transition: function(url){ window.location.href = url; }
     });
     
+
+    
     /*[ Back to top ]
     ===========================================================*/
     var windowH = $(window).height()/2;
@@ -40,7 +42,18 @@
         $('html, body').animate({scrollTop: 0}, 300);
     });
 
-
+    /* 우측 리모트 생성 제어 */
+    $(window).scroll(function(){
+    	var top = $(window).scrollTop();
+    	
+    	if( top >= 590){
+    		$('.remote').css("display","flex");
+    	} else {
+    		$('.remote').css("display","none");
+    	}
+    });
+    
+    
     /*==================================================================
     [ Fixed Header ]*/
     var headerDesktop = $('.container-menu-desktop');
@@ -111,19 +124,19 @@
 
     /*==================================================================
     [ Show / hide modal search ]*/
-    $('.js-show-modal-search').on('click', function(){
-        $('.modal-search-header').addClass('show-modal-search');
-        $(this).css('opacity','0');
-    });
-
-    $('.js-hide-modal-search').on('click', function(){
-        $('.modal-search-header').removeClass('show-modal-search');
-        $('.js-show-modal-search').css('opacity','1');
-    });
-
-    $('.container-search-header').on('click', function(e){
-        e.stopPropagation();
-    });
+//    $('.js-show-modal-search').on('click', function(){
+//        $('.modal-search-header').addClass('show-modal-search');
+//        $(this).css('opacity','0');
+//    });
+//
+//    $('.js-hide-modal-search').on('click', function(){
+//        $('.modal-search-header').removeClass('show-modal-search');
+//        $('.js-show-modal-search').css('opacity','1');
+//    });
+//
+//    $('.container-search-header').on('click', function(e){
+//        e.stopPropagation();
+//    });
 
 
     /*==================================================================
@@ -277,6 +290,9 @@
         $('.js-modal1').removeClass('show-modal1');
     });
 
-
-
+    /* 유저 hover 창 */
+    var user = $('.panda-header-user');
+    $(user).on('click',function() {
+    	 
+    });
 })(jQuery);
