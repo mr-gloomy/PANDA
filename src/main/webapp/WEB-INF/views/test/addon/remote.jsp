@@ -6,14 +6,13 @@
 <script type="text/javascript">
 var ht = new Happytalk({
     siteId: '4000002564',
-    siteName: '판다',
+    siteName: 'PANDA',
     categoryId: '155093',
     divisionId: '155094',
-    kakaoId: '@해피톡io',
-    naverId: 'wcb559',
+
 });
 </script>
-<!--  top 590px 생성기준 위치 -->
+
 
 <div class="remote">
 	<div class="chat-button">
@@ -28,3 +27,4 @@ var ht = new Happytalk({
 			src="/resources/images/icons/up-arrow.png" alt="top"></a>
 	</div>
 </div>
+

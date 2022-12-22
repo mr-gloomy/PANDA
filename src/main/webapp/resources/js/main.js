@@ -46,7 +46,7 @@
     $(window).scroll(function(){
     	var top = $(window).scrollTop();
     	
-    	if( top >= 590){
+    	if( top >= 620){
     		$('.remote').css("display","flex");
     	} else {
     		$('.remote').css("display","none");
@@ -295,4 +295,11 @@
     $(user).on('click',function() {
     	 
     });
+    
+    /* 채팅봇 */
+    var bot = $('.chat-bot');
+    $(bot).on('click',function(){
+    	ht.open();
+    });
+    
 })(jQuery);

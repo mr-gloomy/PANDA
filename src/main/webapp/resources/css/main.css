@@ -3368,7 +3368,7 @@ input.num-product::-webkit-inner-spin-button {
     padding: 12px 16px;
     margin-top: 215px;
     z-index: 10000;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 10px;
     background: ghostwhite;
 }
@@ -3514,8 +3514,8 @@ input.num-product::-webkit-inner-spin-button {
     z-index: 9999999;
     position: fixed;
     display: none;
-    top: 355px; /* 삭제 */
-    right: 20px;
+    top: 280px; 
+    right: 45px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
