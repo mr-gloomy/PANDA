@@ -44,6 +44,9 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
+# target folder
+target/
+
 # STS (Spring Tool Suite)
 .springBeans
 
