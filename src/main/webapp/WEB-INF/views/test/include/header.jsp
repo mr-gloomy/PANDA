@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!-- Header -->
+
 <header>
 	<!-- 임시 -->
 	<script>
@@ -70,7 +71,7 @@
 
 					<div class="icon-header-item trans-04 p-l-22 p-r-11" id="usersel"
 						style="padding-bottom: 10px; padding-right: 15px; display: inline-block;">
-						<a href="#" memo="상점으로"> <img class="panda-header-user"
+						<a href="#" memo="내정보"> <img class="panda-header-user"
 							src="/resources/images/icons/panda-user.png" alt="panda-user">
 						</a>
 					</div>
@@ -101,7 +102,7 @@
 								<q>아이디가 없으시다면?<br> &nbsp;회원가입 후 이용해주세요!
 								</q>
 								<div class="user-modify">
-									<input type="button" onclick="" class="modify" value="로그인"
+									<input type="button" class="usermodal" value="로그인"
 										style="width: 64.5px; margin-top: 7px;">
 								</div>
 								<div class="user-logout">
@@ -212,3 +213,15 @@
 	</div>
 </header>
 </head>
+
+<!-- 로그인 모달창 -->
+
+<div class="login-modal" >
+<div class="modal-body">로그인모달창 제작중 <input type="button" value="버튼클릭" class="modalhide"></div>
+
+</div>
+
+
+
+
+

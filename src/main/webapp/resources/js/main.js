@@ -308,5 +308,17 @@
     $(bot).on('click',function(){
     	ht.open();
     });
-    
+    /* 로그인 모달창 제어 */
+    $('.usermodal').click(function(){
+    	$('html').css({'overflow': 'hidden'});
+    	$(".login-modal").css("display","flex");
+    	event.preventDefault();
+    	event.stopPropagation();
+    	return false;
+    });
+    $('.modalhide').on('click',function(){
+    	$('.login-modal').css("display","none");
+    	$('#element').off('scroll touchmove mousewheel');
+    	$('html').css({'overflow': 'visible'});
+    });
 })(jQuery);
