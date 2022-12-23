@@ -17,9 +17,11 @@
 	<%-- 변수값은 임시값입니다. --%>
 	<c:set var="username" value="김태홍" />
 	<c:set var="admin" value="관리자" />
-	<c:set var="adminchk" value="0" />
-	<c:set var="userid" value="null" />
-
+	<c:set var="adminchk" value="1" /> 
+	<!-- 밸류값 0 : 일반유저, 1: 어드민 입니다. -->
+	<c:set var="userid" value="null" /> 
+	<!-- 밸류값 null : 비로그인상태, null제외한 다른값 로그인상태화면 -->
+	
 
 
 
@@ -75,7 +77,19 @@
 					<div class="hoversup"></div>
 					<div class="category">
 						<div class="user-sel-images">
-							<img class="bamboo" src="/resources/images/icons/bamboo.png">
+							<c:choose>
+								<c:when test="${userid eq 'null'}">
+									<img class="bamboo" src="/resources/images/icons/bamboo.png"
+										style="margin-left: 166px;">
+								</c:when>
+								<c:when test="${userid ne 'null' and adminchk lt '1' }">
+								<img class="bamboo" src="/resources/images/icons/bamboo.png"
+										style="height:88px;">
+								</c:when>
+								<c:otherwise>
+									<img class="bamboo" src="/resources/images/icons/bamboo.png">
+								</c:otherwise>
+							</c:choose>
 						</div>
 
 						<!-- 로그인 시 -->
@@ -113,15 +127,16 @@
 								</div>
 							</c:when>
 							<c:when test="${userid ne 'null' and adminchk lt '1'}">
-								<p style="margin-bottom : 5px;">
+								<p style="margin-bottom: 5px;">
 									<span class="login-admin">${admin }</span> 님 환영합니다
 								</p>
 								<ul>
-									<li><a class="adminmenu" href="#">관리자 메뉴 이동<img class="right"
-											src="/resources/images/icons/right-arrow.png"></a></li>
+									<li><a class="adminmenu" href="#">관리자 메뉴 이동<img
+											class="right" src="/resources/images/icons/right-arrow.png"></a></li>
 								</ul>
-								<div class="user-logout" style="margin-left:40px;">
-									<input type="button" onclick="lo()" class="logout" value="로그아웃" style="margin-top: 7px;">
+								<div class="user-logout" style="margin-left: 40px;">
+									<input type="button" onclick="lo()" class="logout" value="로그아웃"
+										style="margin-top: 7px;">
 								</div>
 							</c:when>
 						</c:choose>
