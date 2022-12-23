@@ -3361,7 +3361,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .category {
-	display: none;
+	display: block;
     position: absolute;
     min-width: 185px;
     box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
@@ -3397,7 +3397,10 @@ input.num-product::-webkit-inner-spin-button {
 	display: block;
 	opacity: 0.8;
 }
-	
+.category ul>li>a:hover .right {
+	display : block;
+	opacity: 0.8;
+}	
 
 .category ul>li img {
 	display : none;
@@ -3406,11 +3409,32 @@ input.num-product::-webkit-inner-spin-button {
 	margin: -17px 0px 0px 49px;
 	position: absolute;
 }
+
+.category ul>li .right {
+	display : none;
+	width: 8px;
+	height: 8px;
+	margin: -17px 0px 0px 112px;
+	position: absolute;
+}
 .category p {
 	text-align: center;
 }
 .category p>span {
 	color : green;
+}
+.category .login-admin {
+	color : blue;
+}
+.category p>strong {
+	color : red;
+	opacity: 0.7;
+}
+.category p>strong:hover {
+	opacity: 1;
+}
+.category q {
+	font-size:10px;
 }
 .category .user-modify {
 	position: absolute;
@@ -3430,8 +3454,6 @@ input.num-product::-webkit-inner-spin-button {
 }
 .category .user-logout{
 	margin-left: 80px;
-	
-	
 }
 .category .user-logout .logout {
 	background: rgb(134,200,188);

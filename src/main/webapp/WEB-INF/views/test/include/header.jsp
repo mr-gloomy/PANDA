@@ -1,16 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!-- Header -->
 <header>
-<!-- 임시 -->
-<script>
-function mo() {
-	alert('정보수정할래요');
-}
-function lo(){
-	alert('로그아웃할래요');
-}
-</script>
+	<!-- 임시 -->
+	<script>
+		function mo() {
+			alert('정보수정할래요');
+		}
+		function lo() {
+			alert('로그아웃할래요');
+		}
+	</script>
+
+
+	<%-- 변수값은 임시값입니다. --%>
+	<c:set var="username" value="김태홍" />
+	<c:set var="admin" value="관리자" />
+	<c:set var="adminchk" value="0" />
+	<c:set var="userid" value="null" />
+
+
+
 
 
 	<!-- Header desktop -->
@@ -57,34 +68,66 @@ function lo(){
 
 					<div class="icon-header-item trans-04 p-l-22 p-r-11" id="usersel"
 						style="padding-bottom: 10px; padding-right: 15px; display: inline-block;">
-						<a href="#" memo="마이페이지"> <img class="panda-header-user"
+						<a href="#" memo="상점으로"> <img class="panda-header-user"
 							src="/resources/images/icons/panda-user.png" alt="panda-user">
 						</a>
-						<!-- DB설계완료시 로그인여부 제어예정 -->
 					</div>
 					<div class="hoversup"></div>
 					<div class="category">
 						<div class="user-sel-images">
 							<img class="bamboo" src="/resources/images/icons/bamboo.png">
 						</div>
-						
+
 						<!-- 로그인 시 -->
-						<p>
-							<span>김태홍</span> 님 환영합니다
-						</p>
-						<ul>
-							<li><a class="my" href="#">내 정보<img class="right" src="/resources/images/icons/right-arrow.png" ></a></li>
-							<li><a class="my" href="#">내 상점<img class="right" src="/resources/images/icons/right-arrow.png" ></a></li>
-						</ul>
-						<div class="user-modify">
-							<input type="button" onclick="mo()" class="modify" value="정보수정">
-						</div>
-						<div class="user-logout">
-							<input type="button" onclick="lo()" class="logout" value="로그아웃">
-						</div>
+						<c:choose>
+							<c:when test="${userid eq 'null' }">
+								<p>
+									<strong>로그인</strong> 후 이용해주세요
+								</p>
+								<q>아이디가 없으시다면?<br> &nbsp;회원가입 후 이용해주세요!
+								</q>
+								<div class="user-modify">
+									<input type="button" onclick="" class="modify" value="로그인"
+										style="width: 64.5px; margin-top: 7px;">
+								</div>
+								<div class="user-logout">
+									<input type="button" onclick="location.href='#'" class="logout"
+										value="회원가입" style="margin-top: 7px;">
+								</div>
+							</c:when>
+							<c:when test="${userid ne 'null' and adminchk gt '0'}">
+								<p>
+									<span>${username }</span> 님 환영합니다
+								</p>
+								<ul>
+									<li><a class="my" href="#">내 정보<img class="right"
+											src="/resources/images/icons/right-arrow.png"></a></li>
+									<li><a class="my" href="#">내 상점<img class="right"
+											src="/resources/images/icons/right-arrow.png"></a></li>
+								</ul>
+								<div class="user-modify">
+									<input type="button" onclick="mo()" class="modify" value="정보수정">
+								</div>
+								<div class="user-logout">
+									<input type="button" onclick="lo()" class="logout" value="로그아웃">
+								</div>
+							</c:when>
+							<c:when test="${userid ne 'null' and adminchk lt '1'}">
+								<p style="margin-bottom : 5px;">
+									<span class="login-admin">${admin }</span> 님 환영합니다
+								</p>
+								<ul>
+									<li><a class="adminmenu" href="#">관리자 메뉴 이동<img class="right"
+											src="/resources/images/icons/right-arrow.png"></a></li>
+								</ul>
+								<div class="user-logout" style="margin-left:40px;">
+									<input type="button" onclick="lo()" class="logout" value="로그아웃" style="margin-top: 7px;">
+								</div>
+							</c:when>
+						</c:choose>
 						<!-- 로그인 시  -->
-						
-						
+
+
 					</div>
 
 				</div>
