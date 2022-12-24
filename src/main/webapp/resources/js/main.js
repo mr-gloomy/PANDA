@@ -378,16 +378,17 @@ $(".id_save").keyup(function(){
 });
 
 /* 로그인창 각종 효과 및 기능 */
-var idinput = $(".id").val('')
-var pwinput = $(".pass").val('');
+/* value 값 초기화버튼 리셋이벤트는 쿠키값저장과 충돌문제로 주석처리 */
+//var idinput = $(".id").val('')
+//var pwinput = $(".pass").val('');
 
 $(".id").on('focus',function(){
 	$(".id").css("opacity", "1");
 });
 $("#idreset").on('click',function(){
 	$(".id").css("opacity", "1");
-	$("#idreset").css("display","none");
-	$(idinput).val('');
+//	$("#idreset").css("display","none");
+//	$(idinput).val('');
 	$(".id").focus();
 });
 $(".id").on('blur',function(){
@@ -400,24 +401,24 @@ $(".pass").on('focus',function(){
 });
 $("#pwreset").on('click',function(){
 	$(".pass").css("opacity", "1");
-	$("#pwreset").css("display","none");
-	$(pwinput).val('');
+//	$("#pwreset").css("display","none");
+//	$(pwinput).val('');
 	$(".pass").focus();
 });
 $(".pass").on('blur',function(){
 	$(".pass").css("opacity", "0.7");
 });
-$(function(){
-	$(".id").keyup(function(){
-	    if($(idinput != null)){
-	       $("#idreset").css("display","block");
-	    } 
-	});
-});
-$(function(){
-	$(".pass").keyup(function(){
-	    if($(idinput != null)){
-	       $("#pwreset").css("display","block");
-	    } 
-	});
-});
+//$(function(){
+//	$(".id").keyup(function(){
+//	    if($(idinput != null)){
+//	       $("#idreset").css("display","block");
+//	    } 
+//	});
+//});
+//$(function(){
+//	$(".pass").keyup(function(){
+//	    if($(idinput != null)){
+//	       $("#pwreset").css("display","block");
+//	    } 
+//	});
+//});
