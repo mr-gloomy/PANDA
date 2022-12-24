@@ -358,14 +358,14 @@ $(".id").val(Cookies.get('key'));
     
 $(".id_save").change(function(){
     if($(".id_save").is(":checked")){
-        Cookies.set('key', $(".id").val(), { expires: 30 });
+        Cookies.set('key', $(".id").val(), { expires: 365 });
     }else{
           Cookies.remove('key');
     }
 });
 $(".id").keyup(function(){ 
     if($(".id_save").is(":checked")){ 
-    	Cookies.set('key', $(".id").val(), { expires: 30 });
+    	Cookies.set('key', $(".id").val(), { expires: 365 });
     } else{
           Cookies.remove('key');
     }
@@ -373,6 +373,6 @@ $(".id").keyup(function(){
      
 $(".id_save").keyup(function(){
     if($(".id_save").is(":checked")){
-        Cookies.set('key', $(".id").val(), { expires: 30 });
+        Cookies.set('key', $(".id").val(), { expires: 365 });
     }
 });
