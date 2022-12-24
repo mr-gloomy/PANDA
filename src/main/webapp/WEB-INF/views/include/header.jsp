@@ -227,8 +227,12 @@
 		<img src="/resources/images/icons/close.png" alt="IMG-LOGO"
 			class="modalhide">
 		<div class="modal-text">
+			<img src="/resources/images/icons/user.png" alt="id입력" class="userimg">
+			<img src="/resources/images/icons/reset.png" alt="idreset" id="idreset" class="resetimg">
 			<input type="text" id="user_id" name="user_id" placeholder="PANDA ID"
-				maxlength="15" class="id" onkeypress="chkCapsLock(event)" onclick="chkCapsLock(event)" onblur="chkCapsLock1(event)"> 
+				maxlength="15" class="id" onkeypress="chkCapsLock(event)" onclick="chkCapsLock(event)" onblur="chkCapsLock1(event)">
+			<img src="/resources/images/icons/pass.png" alt="id입력" class="passimg">
+			<img src="/resources/images/icons/reset.png" alt="idreset" id="pwreset"class="resetimg">
 			<input type="password"
 				id="user_pw" name="user_pw" placeholder="PANDA PW" maxlength="20"
 				class="pass" onkeypress="chkCapsLock(event)" onclick="chkCapsLock(event)" onblur="chkCapsLock1(event)" >
@@ -236,7 +240,8 @@
 			<div class="check-box">
 				<label class="chk_id"><input type="checkbox" class="id_save"> <strong>아이디 저장</strong></label>
 				<label class="show_pw"><input type="checkbox" class="pw_show" onclick="chkCapsLock(event)" onblur="chkCapsLock1(event)"> <strong>패스워드 보기</strong></label>
-				</div>
+			</div>
 		</div>
+		<div class="login-submit"><input type="button" value="로그인"></div>
 	</div>
 </div>

@@ -3632,20 +3632,53 @@ input.num-product::-webkit-inner-spin-button {
     width: 350px;
     height: 40px;
     border-radius: 5px;
-    padding-left: 15px;
+    padding-left: 35px;
     margin-bottom: 10px;
+    opacity: 0.6;
+    cursor: pointer;
 }
+
 .login-modal .modal-body .modal-text .pass{
 	background-color: rgb(197 197 197 / 70%);
     width: 350px;
     height: 40px;
     border-radius: 5px;
-    padding-left: 15px;
+    padding-left: 35px;
     margin-bottom: 10px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.login-modal .modal-body .modal-text img {
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 3px 0px 0px 3px;
+    opacity: 0.7;
+}
+.login-modal .modal-body .modal-text .resetimg {
+	width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 10px 0px 0px 320px;
+    z-index: 999999;
+    display: none;
+}
+.login-modal .modal-body .modal-text .passimg{
+    width: 20px;
+    height: 22px;
+    margin: 8px 0 0 8px;
+    opacity: 0.7;
 }
 .login-modal .modal-body .modal-text .check-box {
 	display: flex;
 }
+.login-modal .modal-body .modal-text .check-box input[type="checkbox"] {
+	accent-color : black; 
+	height:17px;
+}
+
+
+	
 .login-modal .modal-body .modal-text .check-box >label {
 	display: flex;
 	font-size: 12px;

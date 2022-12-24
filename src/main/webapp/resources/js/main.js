@@ -376,3 +376,48 @@ $(".id_save").keyup(function(){
         Cookies.set('key', $(".id").val(), { expires: 365 });
     }
 });
+
+/* 로그인창 각종 효과 및 기능 */
+var idinput = $(".id").val('')
+var pwinput = $(".pass").val('');
+
+$(".id").on('focus',function(){
+	$(".id").css("opacity", "1");
+});
+$("#idreset").on('click',function(){
+	$(".id").css("opacity", "1");
+	$("#idreset").css("display","none");
+	$(idinput).val('');
+	$(".id").focus();
+});
+$(".id").on('blur',function(){
+	$(".id").css("opacity", "0.7");
+});
+
+
+$(".pass").on('focus',function(){
+	$(".pass").css("opacity", "1");
+});
+$("#pwreset").on('click',function(){
+	$(".pass").css("opacity", "1");
+	$("#pwreset").css("display","none");
+	$(pwinput).val('');
+	$(".pass").focus();
+});
+$(".pass").on('blur',function(){
+	$(".pass").css("opacity", "0.7");
+});
+$(function(){
+	$(".id").keyup(function(){
+	    if($(idinput != null)){
+	       $("#idreset").css("display","block");
+	    } 
+	});
+});
+$(function(){
+	$(".pass").keyup(function(){
+	    if($(idinput != null)){
+	       $("#pwreset").css("display","block");
+	    } 
+	});
+});
