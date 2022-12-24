@@ -401,4 +401,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</script>
 <!--===============================================================================================-->
 	<script src="/resources/js/main.js"></script>
+	</html>
     

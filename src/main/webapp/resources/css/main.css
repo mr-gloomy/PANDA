@@ -3627,14 +3627,37 @@ input.num-product::-webkit-inner-spin-button {
 	text-align: center;
 	font-size: x-large;
 }
-.login-modal .modal-body .modal-text .text{
-	background: rgb(197 197 197 / 70%);
+.login-modal .modal-body .modal-text .id{
+	background-color: rgb(197 197 197 / 70%);
     width: 350px;
     height: 40px;
     border-radius: 5px;
     padding-left: 15px;
     margin-bottom: 10px;
 }
+.login-modal .modal-body .modal-text .pass{
+	background-color: rgb(197 197 197 / 70%);
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.login-modal .modal-body .modal-text .check-box {
+	display: flex;
+}
+.login-modal .modal-body .modal-text .check-box >label {
+	display: flex;
+	font-size: 12px;
+	cursor: pointer;
+}
+.login-modal .modal-body .modal-text .check-box >label>strong{
+	margin: 0px 10px 0 3px;
+}
+.login-modal .modal-body .modal-text .check-box .pw_show {
+	margin-left: 3px;
+}
+
 .modalhide {
 	width: 20px;
 	height: 20px;
@@ -3642,7 +3665,6 @@ input.num-product::-webkit-inner-spin-button {
 	position: absolute;
     right: 25px;
 }
-
 .modalhide:hover{
 	opacity: 1;
 }
