@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/test/*")
+@RequestMapping(value = "/main/*")
 public class TestController {
 	
 	
@@ -15,7 +15,7 @@ public class TestController {
 				= LoggerFactory.getLogger(TestController.class);
 	
 	
-	// http://localhost:8080/test/test
+	// http://localhost:8080/main/test
 	@RequestMapping(value = "/test",method = RequestMethod.GET)
 	public void testGET() {
 		
@@ -23,7 +23,7 @@ public class TestController {
 		
 	}
 	
-	// http://localhost:8080/test/index
+	// http://localhost:8080/main/index
 	@RequestMapping(value = "/index",method = RequestMethod.GET)
 	public void indexGET() {
 		

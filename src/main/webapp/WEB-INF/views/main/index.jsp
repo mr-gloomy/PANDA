@@ -9,11 +9,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 
 <!-- 헤더 -->
-<jsp:include page="./include/header.jsp"/>
+<jsp:include page="../include/header.jsp"/>
 <!-- css -->
-<jsp:include page="./include/css.jsp"/>
+<jsp:include page="../include/css.jsp"/>
 <!-- remote -->
-<jsp:include page="./addon/remote.jsp"/>
+<jsp:include page="../addon/remote.jsp"/>
 
 
 </head>
@@ -1118,7 +1118,7 @@
 	
 	
 <!-- 푸터 -->
-<jsp:include page="./include/footer.jsp"/>
+<jsp:include page="../include/footer.jsp"/>
 
 <!--===============================================================================================-->	
 	<script src="/resources/vendor/jquery/jquery-3.2.1.min.js"></script>
