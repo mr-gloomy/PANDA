@@ -18,11 +18,11 @@
 	<%-- 변수값은 임시값입니다. --%>
 	<c:set var="username" value="김태홍" />
 	<c:set var="admin" value="관리자" />
-	<c:set var="adminchk" value="1" /> 
+	<c:set var="adminchk" value="1" />
 	<!-- 밸류값 0 : 일반유저, 1: 어드민 입니다. -->
-	<c:set var="userid" value="null" /> 
+	<c:set var="userid" value="null" />
 	<!-- 밸류값 null : 비로그인상태, null제외한 다른값 로그인상태화면 -->
-	
+
 
 
 
@@ -84,8 +84,8 @@
 										style="margin-left: 166px;">
 								</c:when>
 								<c:when test="${userid ne 'null' and adminchk lt '1' }">
-								<img class="bamboo" src="/resources/images/icons/bamboo.png"
-										style="height:88px;">
+									<img class="bamboo" src="/resources/images/icons/bamboo.png"
+										style="height: 88px;">
 								</c:when>
 								<c:otherwise>
 									<img class="bamboo" src="/resources/images/icons/bamboo.png">
@@ -216,9 +216,19 @@
 
 <!-- 로그인 모달창 -->
 
-<div class="login-modal" >
-<div class="modal-body">로그인모달창 제작중 <input type="button" value="버튼클릭" class="modalhide"></div>
-
+<div class="login-modal">
+	<div class="modal-body">
+		<div class="modal-logo">
+			<img src="/resources/images/icons/PANDA.png" alt="IMG-LOGO">
+		</div>
+		<div class="modal-top">PANDA LOGIN</div>
+		<img src="/resources/images/icons/close.png" alt="IMG-LOGO"
+			class="modalhide">
+			<div class="modal-text">
+			<input type="text" id="user_id" name="user_id" placeholder="PANDA ID" maxlength="15" class="text">
+			<input type="password" id="user_pw" name="user_pw" placeholder="PANDA PW" maxlength="20" class="text">
+			</div>
+	</div>
 </div>
 
 

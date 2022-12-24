@@ -3447,7 +3447,7 @@ input.num-product::-webkit-inner-spin-button {
     margin-top: 3px;
     color: darkslategray;
     cursor: pointer;
-    opacity: 0.6
+    opacity: 0.6;
 }
 .category .user-modify .usermodal {
 	background: rgb(206,237,199);
@@ -3456,10 +3456,13 @@ input.num-product::-webkit-inner-spin-button {
     margin-top: 3px;
     color: darkslategray;
     cursor: pointer;
-    opacity: 0.6
+    opacity: 0.6;
 }
 .category .user-modify .modify:hover {
-	opacity: 0.8
+	opacity: 0.8;
+}
+.category .user-modify .usermodal:hover {
+	opacity: 0.8;
 }
 .category .user-logout{
 	margin-left: 80px;
@@ -3471,10 +3474,10 @@ input.num-product::-webkit-inner-spin-button {
     margin-top: 3px;
     color: darkslategray;
     cursor: pointer;
-    opacity: 0.6
+    opacity: 0.6;
 }
 .category .user-logout .logout:hover {
-	opacity: 0.8
+	opacity: 0.8;
 }
 
 #usersel:hover ~ .category {
@@ -3542,7 +3545,7 @@ input.num-product::-webkit-inner-spin-button {
 .remote {
 	width: 50px;
     min-height: 120px;
-    z-index: 9999999;
+    z-index: 5000;
     position: fixed;
     display: none;
     top: 280px; 
@@ -3595,20 +3598,53 @@ input.num-product::-webkit-inner-spin-button {
 	background-color: rgba(0,0,0,0.5);
 	display: none;
 	animation: fade-in 1.5s;
-	display: none;
 }
 .login-modal .modal-body {
+	flex-direction: column;
 	display : flex;
 	z-index : 100002;
 	position : absolute;
-	top : 50%;
-	left : 50%;
+	top : 22%;
+	left : 39%;
 	height: 500px;
-	width: 500px;
+	width: 400px;
+    padding:25px;
 	background: white;
+	border-radius: 25px;
+	box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+	
 }
+.login-modal .modal-body .modal-logo {
+	display: flex;
+	justify-content: center;
+}
+.login-modal .modal-body .modal-logo>img {
+	width: 55px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+.login-modal .modal-body .modal-top {
+	text-align: center;
+	font-size: x-large;
+}
+.login-modal .modal-body .modal-text .text{
+	background: rgb(197 197 197 / 70%);
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.modalhide {
+	width: 20px;
+	height: 20px;
+	opacity: 0.7;
+	position: absolute;
+    right: 25px;
+}
+
 .modalhide:hover{
-	color : red;
+	opacity: 1;
 }
 
 /* 추가 - 김태홍  손대면 안됍니다!!!!*/
