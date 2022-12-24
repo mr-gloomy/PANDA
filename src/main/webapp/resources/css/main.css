@@ -3635,7 +3635,7 @@ input.num-product::-webkit-inner-spin-button {
     padding-left: 35px;
     margin-bottom: 10px;
     opacity: 0.6;
-    cursor: pointer;
+    cursor: text;
 }
 
 .login-modal .modal-body .modal-text .pass{
@@ -3646,7 +3646,7 @@ input.num-product::-webkit-inner-spin-button {
     padding-left: 35px;
     margin-bottom: 10px;
     opacity: 0.6;
-    cursor: pointer;
+    cursor: text;
 }
 .login-modal .modal-body .modal-text img {
 	width: 30px;
@@ -3664,13 +3664,14 @@ input.num-product::-webkit-inner-spin-button {
     z-index: 999999;
     display: none;
 }
+*/
 .login-modal .modal-body .modal-text .passimg{
     width: 20px;
     height: 22px;
     margin: 8px 0 0 8px;
     opacity: 0.7;
 }
-*/
+
 .login-modal .modal-body .modal-text .check-box {
 	display: flex;
 }
@@ -3692,7 +3693,87 @@ input.num-product::-webkit-inner-spin-button {
 .login-modal .modal-body .modal-text .check-box .pw_show {
 	margin-left: 3px;
 }
+.login-modal .modal-body .login-submit {
+	display: flex;
+    padding: 10px 0 10px 0;
+    justify-content: center;
+}
+.login-modal .modal-body .login-submit .submit {
+	width : 350px;
+	height : 40px;
+    color: white;
+    background: rgba(90, 90, 90,1);
+    opacity: 0.8;
+}
+.login-modal .modal-body .login-submit .submit:hover {
+    opacity: 1;
+}
+.login-modal .modal-body .find {
+	display: flex;
+	justify-content: center;
 
+}
+.login-modal .modal-body .find .findid {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.login-modal .modal-body .find .findid:hover {
+	color : #6c7ae0;;
+	opacity: 1;
+}
+.login-modal .modal-body .find .findpw {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.login-modal .modal-body .find .findpw:hover {
+	color : #6c7ae0;;
+	opacity: 1;
+}
+.login-modal .modal-body .find .division {
+	font-size: 13px;
+	margin: 0 5px 0 5px;
+	cursor: context-menu;
+}
+.login-modal .modal-body .join {
+	display: flex;
+    justify-content: center;
+    margin-top:10px;
+    
+}
+.login-modal .modal-body .join p {
+	color : red;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.login-modal .modal-body .join a {
+    cursor: context-menu;
+}
+.login-modal .modal-body .join p:hover {
+	opacity: 1;
+}
+.login-modal .modal-body .social-login{
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+.login-modal .modal-body .social-login p{
+	cursor : context-menu;
+}
+.login-modal .modal-body .social-login img {
+	width: 134px;
+    height: 23px;
+    opacity: 0.7;
+}
+.login-modal .modal-body .kakaologin {
+	margin-top : 15px;
+	opacity: 0.8;
+}
+.login-modal .modal-body .kakaologin:hover {
+	opacity: 1;
+}
+.modal-top {
+	cursor : context-menu;
+}
 .modalhide {
 	width: 20px;
 	height: 20px;

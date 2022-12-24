@@ -132,7 +132,6 @@
 	//    $('.container-search-header').on('click', function(e){
 	//        e.stopPropagation();
 	//    });
-
 	/*==================================================================
 	[ Isotope ]*/
 	var $topeContainer = $('.isotope-grid');
@@ -338,74 +337,80 @@ $(document).ready(function() {
 	});
 });
 /* 로그인창 한글 제어 */
-$(function(){
+$(function() {
 	$('.id').on("blur keyup", function() {
-		$(this).val( $(this).val().replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, '' ) );
+		$(this).val($(this).val().replace(/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, ''));
 	});
 })
-$(function(){
+$(function() {
 	$('.pass').on("blur keyup", function() {
-		$(this).val( $(this).val().replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, '' ) );
+		$(this).val($(this).val().replace(/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, ''));
 	});
 })
 
 /* 로그인창 아이디저장 쿠키 */
 
-$(".id").val(Cookies.get('key'));      
-    if($(".id").val() != ""){
-        $(".id_save").attr("checked", true);
-    }
-    
-$(".id_save").change(function(){
-    if($(".id_save").is(":checked")){
-        Cookies.set('key', $(".id").val(), { expires: 365 });
-    }else{
-          Cookies.remove('key');
-    }
+$(".id").val(Cookies.get('key'));
+if ($(".id").val() != "") {
+	$(".id_save").attr("checked", true);
+}
+
+$(".id_save").change(function() {
+	if ($(".id_save").is(":checked")) {
+		Cookies.set('key', $(".id").val(), {
+			expires : 365
+		});
+	} else {
+		Cookies.remove('key');
+	}
 });
-$(".id").keyup(function(){ 
-    if($(".id_save").is(":checked")){ 
-    	Cookies.set('key', $(".id").val(), { expires: 365 });
-    } else{
-          Cookies.remove('key');
-    }
+$(".id").keyup(function() {
+	if ($(".id_save").is(":checked")) {
+		Cookies.set('key', $(".id").val(), {
+			expires : 365
+		});
+	} else {
+		Cookies.remove('key');
+	}
 });
-     
-$(".id_save").keyup(function(){
-    if($(".id_save").is(":checked")){
-        Cookies.set('key', $(".id").val(), { expires: 365 });
-    }
+
+$(".id_save").keyup(function() {
+	if ($(".id_save").is(":checked")) {
+		Cookies.set('key', $(".id").val(), {
+			expires : 365
+		});
+	}
 });
 
 /* 로그인창 각종 효과 및 기능 */
 /* value 값 초기화버튼 리셋이벤트는 쿠키값저장과 충돌문제로 주석처리 */
 //var idinput = $(".id").val('')
 //var pwinput = $(".pass").val('');
-
-$(".id").on('focus',function(){
+$(".id").on('focus', function() {
 	$(".id").css("opacity", "1");
 });
-$("#idreset").on('click',function(){
-	$(".id").css("opacity", "1");
+
+//$("#idreset").on('click',function(){
+//	$(".id").css("opacity", "1");
 //	$("#idreset").css("display","none");
 //	$(idinput).val('');
-	$(".id").focus();
-});
-$(".id").on('blur',function(){
+//	$(".id").focus();
+//});
+$(".id").on('blur', function() {
 	$(".id").css("opacity", "0.7");
 });
 
-
-$(".pass").on('focus',function(){
+$(".pass").on('focus', function() {
 	$(".pass").css("opacity", "1");
 });
-$("#pwreset").on('click',function(){
-	$(".pass").css("opacity", "1");
+
+//$("#pwreset").on('click',function(){
+//	$(".pass").css("opacity", "1");
 //	$("#pwreset").css("display","none");
 //	$(pwinput).val('');
-	$(".pass").focus();
-});
-$(".pass").on('blur',function(){
+//	$(".pass").focus();
+//});
+$(".pass").on('blur', function() {
 	$(".pass").css("opacity", "0.7");
 });
 //$(function(){
@@ -422,3 +427,4 @@ $(".pass").on('blur',function(){
 //	    } 
 //	});
 //});
+

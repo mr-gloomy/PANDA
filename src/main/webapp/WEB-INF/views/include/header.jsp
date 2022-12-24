@@ -73,7 +73,7 @@
 
 					<div class="icon-header-item trans-04 p-l-22 p-r-11" id="usersel"
 						style="padding-bottom: 10px; padding-right: 15px; display: inline-block;">
-						<a href="#" memo="내정보"> <img class="panda-header-user"
+						<a memo="내정보"> <img class="panda-header-user"
 							src="/resources/images/icons/panda-user.png" alt="panda-user">
 						</a>
 					</div>
@@ -250,7 +250,22 @@
 			</div>
 		</div>
 		<div class="login-submit">
-			<input type="button" value="로그인">
+			<input type="button" value="로그인" class="submit">
 		</div>
+		<div class="find">
+			<div class="findid">아이디찾기</div>
+			<div class="division">│</div>
+			<div class="findpw">비밀번호찾기</div>
+		</div>
+		<div class="join">
+			<a>계정이 없으신가요?</a>&nbsp;&nbsp;
+			<p>회원가입</p>
+		</div>
+		<div class="social-login">
+			<img src="/resources/images/icons/division-line.png">
+			<p>Social Login</p>
+			<img src="/resources/images/icons/division-line.png">
+		</div>
+			<img class="kakaologin" src="/resources/images/icons/kakao_login_large_wide.png">
 	</div>
 </div>
