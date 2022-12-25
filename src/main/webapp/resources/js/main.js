@@ -1,8 +1,9 @@
 (function($) {
 	"use strict";
 
-	/*[ Load page ]
-	===========================================================*/
+	/*
+	 * [ Load page ] ===========================================================
+	 */
 	$(".animsition").animsition({
 		inClass : 'fade-in',
 		outClass : 'fade-out',
@@ -25,8 +26,10 @@
 		}
 	});
 
-	/*[ Back to top ]
-	===========================================================*/
+	/*
+	 * [ Back to top ]
+	 * ===========================================================
+	 */
 	var windowH = $(window).height() / 2;
 
 	$(window).on('scroll', function() {
@@ -54,8 +57,10 @@
 		}
 	});
 
-	/*==================================================================
-	[ Fixed Header ]*/
+	/*
+	 * ================================================================== [
+	 * Fixed Header ]
+	 */
 	var headerDesktop = $('.container-menu-desktop');
 	var wrapMenu = $('.wrap-menu-desktop');
 
@@ -83,8 +88,10 @@
 		}
 	});
 
-	/*==================================================================
-	[ Menu mobile ]*/
+	/*
+	 * ================================================================== [ Menu
+	 * mobile ]
+	 */
 	$('.btn-show-menu-mobile').on('click', function() {
 		$(this).toggleClass('is-active');
 		$('.menu-mobile').slideToggle();
@@ -117,23 +124,27 @@
 		}
 	});
 
-	/*==================================================================
-	[ Show / hide modal search ]*/
-	//    $('.js-show-modal-search').on('click', function(){
-	//        $('.modal-search-header').addClass('show-modal-search');
-	//        $(this).css('opacity','0');
-	//    });
+	/*
+	 * ================================================================== [ Show /
+	 * hide modal search ]
+	 */
+	// $('.js-show-modal-search').on('click', function(){
+	// $('.modal-search-header').addClass('show-modal-search');
+	// $(this).css('opacity','0');
+	// });
 	//
-	//    $('.js-hide-modal-search').on('click', function(){
-	//        $('.modal-search-header').removeClass('show-modal-search');
-	//        $('.js-show-modal-search').css('opacity','1');
-	//    });
+	// $('.js-hide-modal-search').on('click', function(){
+	// $('.modal-search-header').removeClass('show-modal-search');
+	// $('.js-show-modal-search').css('opacity','1');
+	// });
 	//
-	//    $('.container-search-header').on('click', function(e){
-	//        e.stopPropagation();
-	//    });
-	/*==================================================================
-	[ Isotope ]*/
+	// $('.container-search-header').on('click', function(e){
+	// e.stopPropagation();
+	// });
+	/*
+	 * ================================================================== [
+	 * Isotope ]
+	 */
 	var $topeContainer = $('.isotope-grid');
 	var $filter = $('.filter-tope-group');
 
@@ -175,8 +186,10 @@
 		});
 	});
 
-	/*==================================================================
-	[ Filter / Search product ]*/
+	/*
+	 * ================================================================== [
+	 * Filter / Search product ]
+	 */
 	$('.js-show-filter').on('click', function() {
 		$(this).toggleClass('show-filter');
 		$('.panel-filter').slideToggle(400);
@@ -197,8 +210,9 @@
 		}
 	});
 
-	/*==================================================================
-	[ Cart ]*/
+	/*
+	 * ================================================================== [ Cart ]
+	 */
 	$('.js-show-cart').on('click', function() {
 		$('.js-panel-cart').addClass('show-header-cart');
 	});
@@ -207,8 +221,9 @@
 		$('.js-panel-cart').removeClass('show-header-cart');
 	});
 
-	/*==================================================================
-	[ Cart ]*/
+	/*
+	 * ================================================================== [ Cart ]
+	 */
 	$('.js-show-sidebar').on('click', function() {
 		$('.js-sidebar').addClass('show-sidebar');
 	});
@@ -217,8 +232,10 @@
 		$('.js-sidebar').removeClass('show-sidebar');
 	});
 
-	/*==================================================================
-	[ +/- num product ]*/
+	/*
+	 * ================================================================== [ +/-
+	 * num product ]
+	 */
 	$('.btn-num-product-down').on('click', function() {
 		var numProduct = Number($(this).next().val());
 		if (numProduct > 0)
@@ -230,8 +247,10 @@
 		$(this).prev().val(numProduct + 1);
 	});
 
-	/*==================================================================
-	[ Rating ]*/
+	/*
+	 * ================================================================== [
+	 * Rating ]
+	 */
 	$('.wrap-rating').each(function() {
 		var item = $(this).find('.item-rating');
 		var rated = -1;
@@ -272,8 +291,10 @@
 		});
 	});
 
-	/*==================================================================
-	[ Show modal1 ]*/
+	/*
+	 * ================================================================== [ Show
+	 * modal1 ]
+	 */
 	$('.js-show-modal1').on('click', function(e) {
 		e.preventDefault();
 		$('.js-modal1').addClass('show-modal1');
@@ -392,18 +413,18 @@ $(".id_save").keyup(function() {
 
 /* 로그인창 각종 효과 및 기능 */
 /* value 값 초기화버튼 리셋이벤트는 쿠키값저장과 충돌문제로 주석처리 */
-//var idinput = $(".id").val('')
-//var pwinput = $(".pass").val('');
+// var idinput = $(".id").val('')
+// var pwinput = $(".pass").val('');
 $(".id").on('focus', function() {
 	$(".id").css("opacity", "1");
 });
 
-//$("#idreset").on('click',function(){
-//	$(".id").css("opacity", "1");
-//	$("#idreset").css("display","none");
-//	$(idinput).val('');
-//	$(".id").focus();
-//});
+// $("#idreset").on('click',function(){
+// $(".id").css("opacity", "1");
+// $("#idreset").css("display","none");
+// $(idinput).val('');
+// $(".id").focus();
+// });
 $(".id").on('blur', function() {
 	$(".id").css("opacity", "0.7");
 });
@@ -412,31 +433,31 @@ $(".pass").on('focus', function() {
 	$(".pass").css("opacity", "1");
 });
 
-//$("#pwreset").on('click',function(){
-//	$(".pass").css("opacity", "1");
-//	$("#pwreset").css("display","none");
-//	$(pwinput).val('');
-//	$(".pass").focus();
-//});
+// $("#pwreset").on('click',function(){
+// $(".pass").css("opacity", "1");
+// $("#pwreset").css("display","none");
+// $(pwinput).val('');
+// $(".pass").focus();
+// });
 $(".pass").on('blur', function() {
 	$(".pass").css("opacity", "0.7");
 });
-//$(function(){
-//	$(".id").keyup(function(){
-//	    if($(idinput != null)){
-//	       $("#idreset").css("display","block");
-//	    } 
-//	});
-//});
-//$(function(){
-//	$(".pass").keyup(function(){
-//	    if($(idinput != null)){
-//	       $("#pwreset").css("display","block");
-//	    } 
-//	});
-//});
+// $(function(){
+// $(".id").keyup(function(){
+// if($(idinput != null)){
+// $("#idreset").css("display","block");
+// }
+// });
+// });
+// $(function(){
+// $(".pass").keyup(function(){
+// if($(idinput != null)){
+// $("#pwreset").css("display","block");
+// }
+// });
+// });
 
-/* 모달창 회원가입  */
+/* 모달창 회원가입 */
 $(function() {
 	$('#onclick-join').on("click", function() {
 		$('.modal-text').fadeOut();
@@ -448,7 +469,7 @@ $(function() {
 		$('.back-joinpage').show();
 		$(".modal-join").slideDown(300);
 		$('.modal-top').text("PANDA JOIN");
-		$('.modal-body').css("height","650px");
+		$('.modal-body').css("height", "650px");
 	});
 })
 $(function() {
@@ -462,6 +483,46 @@ $(function() {
 		$('.back-joinpage').hide();
 		$(".modal-join").slideUp(300);
 		$('.modal-top').text("PANDA LOGIN");
-		$('.modal-body').css("height","500px");
+		$('.modal-body').css("height", "500px");
 	});
 })
+/* 우리동네 조회 */
+$(function() {
+	navigator.geolocation.getCurrentPosition(function(position) {
+		var userlat = position.coords.latitude;
+		var userlong = position.coords.longitude;
+		var href = window.location.href;
+		var userlocation = {
+			"userlat" : userlat,
+			"userlong" : userlong
+		};
+		$('.usermodal').on('click', function() {
+			$.ajax({
+				type : "get",
+				url : href,
+				data : userlocation,
+				async:false,
+				success : function(data) {
+					$('#si').val(userlat);
+					$('#gu').val(userlong);
+					alert("ㅎㅇ");
+					$.ajax({
+						type : 'get',
+						url : "https://dapi.kakao.com/v2/local/geo/coord2regioncode.json?x="+userlong+"&y="+userlat,
+						headers: {
+		                    Authorization: "KakaoAK 02cf39cd2fef571915d16c04ab4e60f7"
+		                },
+		                datatype : 'json',
+		                async:false,
+						success : function(data){
+							alert("성공");			
+							var address = JSON.stringify(data);
+							alert(address);
+						}
+					});
+				}	
+			});
+		});
+	})
+}, 1000);
+
