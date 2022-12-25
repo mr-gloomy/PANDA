@@ -278,7 +278,15 @@
 				<input id="name" type="text" placeholder="본명">
 				<input type="text" placeholder="닉네임" maxlength="10">
 				<div id="tooltip" class="nicktooltip">닉네임은 3글자이상, 특수기호 사용불가</div>
-				<input type="text" placeholder="전화번호" maxlength="13">
+				<div class="tellsel">
+				<select id="tel" >
+				<option id="disabled" selected disabled>통신사</option>
+				<option value="SKT">SKT</option>
+				<option value="KT">KT</option>
+				<option value="LG U+">LG U+</option>
+				</select>
+				<input type="tel" placeholder="월요일에 디자인예정" maxlength="13">
+				</div>
 				<div id="tooltip" class="teltooltip">사용중인 전화번호입니다.</div>
 				<div class="findloca">
 				<input type="text" id="si" readonly>

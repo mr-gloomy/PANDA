@@ -3826,23 +3826,41 @@ input.num-product::-webkit-inner-spin-button {
 }
 .login-modal .modal-body .modal-join .join-text .findloca #si,
 .login-modal .modal-body .modal-join .join-text .findloca #gu {
-	width: 140px;
+	width: 145px;
     margin-right: 10px;
     text-align: center;
     padding-left: 0px;
     cursor: context-menu;
 }
 .login-modal .modal-body .modal-join .join-text .findloca #findlocation{
-	width: 50px;
+	width: 40px;
 	padding-left: 0px;
 	cursor: pointer;
 }
+.login-modal .modal-body .modal-join .join-text .tellsel select{
+   -webkit-appearance:none; 
+   -moz-appearance:none; 
+   appearance:none;
+   width : 65px;
+   background:url('../images/icons/updown.png') no-repeat 100% 50%/15px auto;
+}
+.login-modal .modal-body .modal-join .join-text .tellsel select>option{
+	color : red;
+	appearance:none;
+}
+.login-modal .modal-body .modal-join .join-text .tellsel select #disabled{
+	color : black;
+}
+.login-modal .modal-body .modal-join .join-text .tellsel select::ms-expand{
+	display: none; /*for IE10,11 */
+}
+
 .login-modal .modal-body .modal-join .join-text input[type=text],
 .login-modal .modal-body .modal-join .join-text input[type=password],
 .login-modal .modal-body .modal-join .join-text input[type=email],
 .login-modal .modal-body .modal-join .join-text input[type=tel],
 .login-modal .modal-body .modal-join .join-text input[type=button]{
-	width: 350px;
+	width: 300px;
 	background-color: rgb(197 197 197 / 70%);
 	height: 40px;
 	border-radius: 5px;

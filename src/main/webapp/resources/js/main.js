@@ -339,6 +339,7 @@
 		$('html').css({
 			'overflow' : 'visible'
 		});
+		$('.modal-body').css("height", "500px");
 	});
 
 })(jQuery);
