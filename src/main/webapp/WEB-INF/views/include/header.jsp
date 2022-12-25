@@ -225,8 +225,10 @@
 			<img src="/resources/images/icons/PANDA.png" alt="IMG-LOGO">
 		</div>
 		<div class="modal-top">PANDA LOGIN</div>
-		<img src="/resources/images/icons/close.png" alt="IMG-LOGO"
+		<img src="/resources/images/icons/close.png" alt="IMG-close"
 			class="modalhide">
+		<img src="/resources/images/icons/back.png" alt="IMG-back"
+		class="back-joinpage">
 		<div class="modal-text">
 			<img src="/resources/images/icons/user.png" alt="id입력"
 				class="userimg">
@@ -259,7 +261,7 @@
 		</div>
 		<div class="join">
 			<a>계정이 없으신가요?</a>&nbsp;&nbsp;
-			<p>회원가입</p>
+			<p id="onclick-join">회원가입</p>
 		</div>
 		<div class="social-login">
 			<img src="/resources/images/icons/division-line.png">

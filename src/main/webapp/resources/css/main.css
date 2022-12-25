@@ -3774,6 +3774,17 @@ input.num-product::-webkit-inner-spin-button {
 .modal-top {
 	cursor : context-menu;
 }
+.back-joinpage {
+	width: 25px;
+    height: 30px;
+    opacity: 0.7;
+    position: absolute;
+    right: 0px;
+    margin: -5px 55px 0;
+}
+.back-joinpage:hover {
+	opacity: 1;
+}
 .modalhide {
 	width: 20px;
 	height: 20px;
