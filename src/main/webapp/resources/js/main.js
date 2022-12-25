@@ -503,9 +503,8 @@ $(function() {
 				data : userlocation,
 				async:false,
 				success : function(data) {
-					$('#si').val(userlat);
-					$('#gu').val(userlong);
-					alert("ㅎㅇ");
+					alert('성공');
+
 					$.ajax({
 						type : 'get',
 						url : "https://dapi.kakao.com/v2/local/geo/coord2regioncode.json?x="+userlong+"&y="+userlat,
@@ -514,10 +513,9 @@ $(function() {
 		                },
 		                datatype : 'json',
 		                async:false,
-						success : function(data){
-							alert("성공");			
+						success : function(data){		
 							var address = JSON.stringify(data);
-							alert(address);
+							alert(Object.keys(address).length);
 						}
 					});
 				}	
