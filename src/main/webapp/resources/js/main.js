@@ -486,17 +486,21 @@ $(function() {
 		$('.modal-body').css("height", "500px");
 	});
 })
-/* 우리동네 조회 */
+
+
+/* 우리동네(gps값 기준) 조회 */
 $(function() {
-	navigator.geolocation.getCurrentPosition(function(position) {
-		var userlat = position.coords.latitude;
-		var userlong = position.coords.longitude;
-		var href = window.location.href;
-		var userlocation = {
-			"userlat" : userlat,
-			"userlong" : userlong
-		};
-		$('.usermodal').on('click', function() {
+	$('#findlocation').on('click', function() {
+		navigator.geolocation.getCurrentPosition(function(position) {
+//			alert("좌측상단 위치정보 허용해주세요");
+			
+			var userlat = position.coords.latitude;
+			var userlong = position.coords.longitude;
+			var href = window.location.href;
+			var userlocation = {
+					"userlat" : userlat,
+					"userlong" : userlong
+			};
 			$.ajax({
 				type : "get",
 				url : href,
@@ -523,6 +527,7 @@ $(function() {
 				}	
 			});
 		});
+		
 	})
-}, 1000);
+});
 

@@ -3604,14 +3604,15 @@ input.num-product::-webkit-inner-spin-button {
 	display : flex;
 	z-index : 100002;
 	position : absolute;
-	top : 22%;
+	top : 18%;
 	left : 39%;
 	height: 500px;
 	width: 400px;
     padding:25px;
 	background: white;
 	border-radius: 25px;
-	box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+	box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);	
+	transition : height 0.3s;
 	
 }
 .login-modal .modal-body .modal-logo {
@@ -3816,11 +3817,31 @@ input.num-product::-webkit-inner-spin-button {
 .login-modal .modal-body .modal-join .join-text #name{
 	margin-bottom: 15px;
 }
-
+.login-modal .modal-body .modal-join .join-text div {
+	cursor: context-menu;
+}
+.login-modal .modal-body .modal-join .join-text .findloca {
+	display: flex;
+    flex-direction: row;
+}
+.login-modal .modal-body .modal-join .join-text .findloca #si,
+.login-modal .modal-body .modal-join .join-text .findloca #gu {
+	width: 140px;
+    margin-right: 10px;
+    text-align: center;
+    padding-left: 0px;
+    cursor: context-menu;
+}
+.login-modal .modal-body .modal-join .join-text .findloca #findlocation{
+	width: 50px;
+	padding-left: 0px;
+	cursor: pointer;
+}
 .login-modal .modal-body .modal-join .join-text input[type=text],
 .login-modal .modal-body .modal-join .join-text input[type=password],
 .login-modal .modal-body .modal-join .join-text input[type=email],
-.login-modal .modal-body .modal-join .join-text input[type=tel]{
+.login-modal .modal-body .modal-join .join-text input[type=tel],
+.login-modal .modal-body .modal-join .join-text input[type=button]{
 	width: 350px;
 	background-color: rgb(197 197 197 / 70%);
 	height: 40px;

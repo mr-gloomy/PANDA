@@ -280,9 +280,10 @@
 				<div id="tooltip" class="nicktooltip">닉네임은 3글자이상, 특수기호 사용불가</div>
 				<input type="text" placeholder="전화번호" maxlength="13">
 				<div id="tooltip" class="teltooltip">사용중인 전화번호입니다.</div>
-				<div class="">
+				<div class="findloca">
 				<input type="text" id="si" readonly>
 				<input type="text" id="gu" readonly>
+				<input type="button" id="findlocation" value="버튼">
 				</div>
 			</div>
 		</div>	
