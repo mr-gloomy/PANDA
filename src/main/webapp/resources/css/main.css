@@ -3795,6 +3795,8 @@ input.num-product::-webkit-inner-spin-button {
 .modalhide:hover{
 	opacity: 1;
 }
-
+input:-internal-autofill-selected{
+	background-color: rgb(197 197 197 / 70%);
+}
 /* 추가 - 김태홍  손대면 안됍니다!!!!*/
 /*////////////////////////////////////////////////////////*/
