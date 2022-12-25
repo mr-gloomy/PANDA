@@ -503,8 +503,6 @@ $(function() {
 				data : userlocation,
 				async:false,
 				success : function(data) {
-					alert('성공');
-
 					$.ajax({
 						type : 'get',
 						url : "https://dapi.kakao.com/v2/local/geo/coord2regioncode.json?x="+userlong+"&y="+userlat,
@@ -515,7 +513,11 @@ $(function() {
 		                async:false,
 						success : function(data){		
 							var address = JSON.stringify(data);
-							alert(Object.keys(address).length);
+							var addp = JSON.parse(address);
+							var si = addp.documents[0].region_1depth_name;
+							var gu = addp.documents[0].region_2depth_name;
+							$('#si').attr('value',si);
+							$('#gu').attr('value',gu);
 						}
 					});
 				}	
