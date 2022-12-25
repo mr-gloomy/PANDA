@@ -301,6 +301,7 @@
 		});
 		$(".login-modal").css("display", "flex");
 		$(".back-joinpage").hide();
+		$(".modal-join").hide();
 		$('.modal-text').fadeIn();
 		$('.login-submit').fadeIn();
 		$('.find').fadeIn();
@@ -435,7 +436,7 @@ $(".pass").on('blur', function() {
 //	});
 //});
 
-/* 모달창 회원가입 이벤트 */
+/* 모달창 회원가입  */
 $(function() {
 	$('#onclick-join').on("click", function() {
 		$('.modal-text').fadeOut();
@@ -445,7 +446,9 @@ $(function() {
 		$('.social-login').fadeOut();
 		$('.kakaologin').fadeOut();
 		$('.back-joinpage').show();
+		$(".modal-join").slideDown(300);
 		$('.modal-top').text("PANDA JOIN");
+		$('.modal-body').css("height","650px");
 	});
 })
 $(function() {
@@ -457,6 +460,8 @@ $(function() {
 		$('.social-login').fadeIn();
 		$('.kakaologin').fadeIn();
 		$('.back-joinpage').hide();
+		$(".modal-join").slideUp(300);
 		$('.modal-top').text("PANDA LOGIN");
+		$('.modal-body').css("height","500px");
 	});
 })

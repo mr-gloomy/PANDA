@@ -269,5 +269,23 @@
 			<img src="/resources/images/icons/division-line.png">
 		</div>
 			<img class="kakaologin" src="/resources/images/icons/kakao_login_large_wide.png">
+		<div class="modal-join">
+			<div class="join-text">
+				<input type="text" placeholder="아이디">
+				<div id="tooltip" class="idtooltip">아이디는 영어,숫자 5~10글자, 한글사용불가</div>
+				<input type="text" placeholder="비밀번호">
+				<div id="tooltip" class="pwtooltip">비밀번호는 영어대소문자,숫자,특수기호 5~20글자, 한글사용불가</div>
+				<input id="name" type="text" placeholder="본명">
+				<input type="text" placeholder="닉네임">
+				<div id="tooltip" class="nicktooltip">닉네임은 3글자이상, 특수기호 사용불가</div>
+				<input type="text" placeholder="전화번호">
+				<div id="tooltip" class="teltooltip">사용중인 전화번호입니다.</div>
+				<input type="text" placeholder="주소">
+			</div>
+		</div>	
 	</div>
 </div>
+
+
+
+
