@@ -7,27 +7,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/test/*")
-public class TestController {
+@RequestMapping(value = "/main/*")
+public class MainPageController {
 	
 	
 	private static final Logger logger
-				= LoggerFactory.getLogger(TestController.class);
+				= LoggerFactory.getLogger(MainPageController.class);
 	
 	
-	// http://localhost:8080/test/test
-	@RequestMapping(value = "/test",method = RequestMethod.GET)
-	public void testGET() {
-		
-		logger.debug(" testGET() 호출 ");
-		
-	}
-	
-	// http://localhost:8080/test/index
+	// http://localhost:8080/main/index
 	@RequestMapping(value = "/index",method = RequestMethod.GET)
 	public void indexGET() {
 		
-		logger.debug(" testGET() 호출 ");
+		logger.debug(" 메인페이지 GET() 호출 ");
 		
 	}
 	
