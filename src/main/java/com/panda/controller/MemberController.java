@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MemberController {
 	
 	// 로거객체
-	
 	private static final Logger mylog
 		= LoggerFactory.getLogger(MemberController.class);
 	
@@ -19,6 +18,10 @@ public class MemberController {
 	@RequestMapping(value = "/join",method = RequestMethod.GET)
 	public void joinGET() {
 		mylog.debug(" joinGET() 호출 ");
+		
+	}
+	
+	public void joinPOST() {
 		
 	}
 	
